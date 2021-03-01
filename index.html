@@ -94,31 +94,31 @@
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="../images/pg02.jpg" alt="First slide">
+            <img class="d-block w-100" src="./images/pg02.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../images/pg01.jpg" alt="Second slide">
+            <img class="d-block w-100" src="./images/pg01.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../images/pg1.jpg" alt="Third slide">
+            <img class="d-block w-100" src="./images/pg1.jpg" alt="Third slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../images/pg2.jpg" alt="Fourth slide">
+            <img class="d-block w-100" src="./images/pg2.jpg" alt="Fourth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../images/pg3.jpg" alt="Fifth slide">
+            <img class="d-block w-100" src="./images/pg3.jpg" alt="Fifth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../images/pg4.jpg" alt="Sixth slide">
+            <img class="d-block w-100" src="./images/pg4.jpg" alt="Sixth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../images/pg5.jpg" alt="Seventh slide">
+            <img class="d-block w-100" src="./images/pg5.jpg" alt="Seventh slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../images/pg6.jpg" alt="Eigth slide">
+            <img class="d-block w-100" src="./images/pg6.jpg" alt="Eigth slide">
           </div>
           <div class="carousel-item">
-              <img class="d-block w-100" src="../images/pg7.jpg" alt="Ninth slide">
+              <img class="d-block w-100" src="./images/pg7.jpg" alt="Ninth slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -191,13 +191,24 @@
     </section>
 
     <section class="map" id="map">
-      <div
-        width= 100%
-        height="450"
-        frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCONhMD9fL-LKhYM9hw-O1NEBVd0zq040w
-          &q=Crimson+Teas,Toronto+ON" allowfullscreen>
-      </div>
+      <script>
+        var map;
+        function initMap() {
+       
+        // The location of Uluru
+        const crimsonTea = { lat: 43.65759127237039, lng: -79.39924455396505 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 18,
+          center: crimsonTea,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: crimsonTea,
+          map: map,
+        });
+      }
+      </script>
     </section>
 
     <section class="reviews">
