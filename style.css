@@ -1,0 +1,222 @@
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+   
+  .header {
+    height: 900px;
+    background-image: url('./images/interior1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .navbar li {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .navbar.scrolled {
+    background: black;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    background: #000;
+    opacity: 0.35;
+    z-index: 1;
+  }
+   
+  .overlay-text {
+    position: absolute;
+    display: flex;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .overlay-text h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-family: 'Crimson Text', serif;
+    font-size: 85px;
+  }
+  
+  .overlay-text h3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+  }
+  
+  .overlay-sm-icons {
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  
+  .overlay-sm-icons a {
+    color: white;
+  }
+  
+  .overlay-sm-icons a:hover {
+    color: gray;
+  }
+  
+  .welcome {  
+    height: 635px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .welcome p {
+    font-size: 27px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .welcome hr {
+    width: 125px;
+    height: 2px;
+    background-color: black;
+  }
+  
+  .welcome h5, h6 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .welcome h6{
+    color: black;
+  }
+  
+  .carousel-inner img{
+    object-fit: cover;
+    height: 1100px;
+    width: 100%;
+  }
+  
+  .menu {
+    height: 825px;
+  }
+  
+  .menu, container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .menu h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .menu h4 {
+    text-align: center;
+  }
+  
+  .menu h6{
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .map {
+    height: 450px;
+  }
+  
+  footer {
+    height: 190px;
+    background-color: darkred;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  footer h6{
+    text-align: center;
+    color: white;
+  }
+  
+  .footer-sm-icons{
+    text-align: center;
+  }
+  
+  footer i {
+    color: white;
+    text-align: center;
+  }
+  
+  footer p {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 12px;
+    color: white;
+  }
+  
+  @media screen and (max-width: 48rem) {
+    .header {
+      height: 600px;
+    }
+  
+    .overlay, 
+    .overlay-text, 
+    .overlay-sm-icons {
+      height: 600px;
+      width: 100%;
+    }
+  
+    .overlay-text h1 {
+      font-size: 35px;
+      letter-spacing: 10px;
+      text-align: center;
+    }
+    .overlay-text h3 {
+      font-size: 15px;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+  
+    .welcome {
+      height: 900px !important;
+    }
+  
+    .welcome p {
+      font-size: 20px !important ;
+    }
+  
+    .welcome hr {
+      width: 50px !important;
+    }
+  
+    .welcome h5 {
+      padding-top: 10px;
+    }
+  
+    .carousel-inner img {
+      height: 550px !important;
+    }
+  
+    .menu {
+      height: 1425px !important;
+    }
+  
+    .menu p {
+      text-align: center;
+    }
+  }
+  
+  
